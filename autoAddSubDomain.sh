@@ -51,6 +51,5 @@ sudo nginx -t && sudo nginx -s reload
 
     echo "Add https for the ${domain_name}.lyhourkh168.xyz"
     sudo certbot --nginx -d "${domain_name}.lyhourkh168.xyz" 
-    exit 1
 fi
 
