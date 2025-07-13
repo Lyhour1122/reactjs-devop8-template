@@ -15,7 +15,7 @@ pipeline {
             steps{
                 sh"""
                 
-                 docker stop reactjs-cont || true 
+                docker stop reactjs-cont || true 
                 docker rm reactjs-cont || true 
                 
                 docker run -dp 3000:80 \
@@ -30,7 +30,7 @@ pipeline {
             steps{
                 sh """
                 echo "Runing shellscript to add the domain name for the service " 
-                
+                sudo bash ./utils/autoAddSubDomain www 3000
                 """
             }
         }
