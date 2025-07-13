@@ -30,7 +30,7 @@ pipeline {
             steps{
                 sh """
                 echo "Runing shellscript to add the domain name for the service " 
-                sudo bash ./utils/autoAddSubDomain www 3000
+                ./autoAddSubDomain www 3000
                 """
             }
         }
