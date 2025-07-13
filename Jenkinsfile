@@ -27,7 +27,6 @@ pipeline {
         }
         stage("Check Files") {
         steps {
-        chmod +x autoAddSubDomain.sh
         sh 'ls -al'
          }
         }
