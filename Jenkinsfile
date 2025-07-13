@@ -36,7 +36,7 @@ pipeline {
                 sh """
                 echo "Runing shellscript to add the domain name for the service " 
                 chmod +x autoAddSubDomain.sh
-                ./autoAddSubDomain.sh www 3000
+                ./autoAddSubDomain.sh ccc 3000
                 """
             }
         }
