@@ -25,7 +25,12 @@ pipeline {
 
             }
         }
-    
+        stage("Check Files") {
+        steps {
+        sh 'ls -al'
+         }
+        }
+
         stage("Add Domain name "){
             steps{
                 sh """
