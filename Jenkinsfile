@@ -30,16 +30,6 @@ pipeline {
         sh 'ls -al'
          }
         }
-
-        stage("Add Domain name "){
-            steps{
-                sh """
-                echo "Runing shellscript to add the domain name for the service " 
-                chmod +x autoAddSubDomain.sh
-                ./autoAddSubDomain.sh ccc 3000
-                """
-            }
-        }
         
     }
 }
