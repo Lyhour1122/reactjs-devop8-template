@@ -25,6 +25,17 @@ function App() {
     localStorage.getItem("tokens") ? true : false
   )
   // const [isLoading, setIsLoading] = useState(true)
+  let value="hello world"
+  const username = "username"
+  const password = "password"
+
+  const testign = () => {
+    console.log("testing")
+  }
+  
+  const testing2 = () => {
+      console.log("testing")
+  }
 
   //validate the token in ensure that users truly valid 
   // useEffect(() => {
